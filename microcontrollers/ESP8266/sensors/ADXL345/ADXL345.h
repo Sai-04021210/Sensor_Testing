@@ -28,7 +28,7 @@ struct ADXL345Config {
   uint8_t dataRate = 10;     // Data rate code (see datasheet, 10 = 100Hz)
 
   // Timing
-  unsigned long readInterval = 100;  // Read every 100ms (10Hz output)
+  unsigned long readInterval = 3000;  // Read every 3000ms (3 seconds)
   unsigned long serialBaudRate = 115200;
 
   // Enable interrupts
