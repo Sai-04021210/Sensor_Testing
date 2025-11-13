@@ -1,12 +1,12 @@
 #include <Arduino.h>
-#include "MQ135.h"
+#include "ADXL345.h"
 
 // ==========================================
-// MQ-135 GAS SENSOR - USING MODULAR LIBRARY
+// ADXL345 ACCELEROMETER SENSOR - USING MODULAR LIBRARY
 // ==========================================
 
-// Create MQ135 sensor instance with default config
-MQ135Sensor sensor;
+// Create ADXL345 sensor instance with default config
+ADXL345Sensor sensor;
 
 void setup() {
   sensor.begin();
