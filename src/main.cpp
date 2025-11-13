@@ -1,17 +1,16 @@
 #include <Arduino.h>
-#include "PIR.h"
+#include "ServoController.h"
 
 // ==========================================
-// PIR MOTION SENSOR - USING MODULAR LIBRARY
+// ARDUINO M0 SERVO CONTROLLER
 // ==========================================
 
-// Create PIR sensor instance with default config
-PIRSensor sensor;
+ServoController servo;
 
 void setup() {
-  sensor.begin();
+  servo.begin();
 }
 
 void loop() {
-  sensor.loop();
+  servo.loop();
 }
