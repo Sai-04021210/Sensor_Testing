@@ -44,7 +44,7 @@ pio run -e esp8266_mq135 -t upload
 
 ### 3. Monitor Output
 ```bash
-pio device monitor -e esp8266_mq135
+pio device monitor -e esp8266_mq135 -b 115200
 ```
 
 That's it! The sensor starts reading immediately after upload.
@@ -52,13 +52,38 @@ That's it! The sensor starts reading immediately after upload.
 ## Available Sensors
 
 ### ESP8266
-- **MQ135** (CO2/Air Quality) - Ready to use
+- **MQ135** (CO2/Air Quality)
   ```bash
   pio run -e esp8266_mq135 -t upload
+  pio device monitor -e esp8266_mq135 -b 115200
   ```
+
+- **ADXL345** (Accelerometer) - 3D visualization included
+  ```bash
+  pio run -e esp8266_adxl345 -t upload
+  pio device monitor -e esp8266_adxl345 -b 115200
+  ```
+  Run 3D visualizer:
+  ```bash
+  cd microcontrollers/ESP8266/sensors/ADXL345
+  source venv/bin/activate
+  python3 visualize_3d.py
+  ```
+
+- **GY-NEO6MV2** (GPS Module)
+  ```bash
+  pio run -e esp8266_gps -t upload
+  pio device monitor -e esp8266_gps -b 115200
+  ```
+
+- **GY-61** (ADXL335 Analog Accelerometer)
+  ```bash
+  pio run -e esp8266_gy61 -t upload
+  pio device monitor -e esp8266_gy61 -b 115200
+  ```
+
 - **DHT11** (Temperature/Humidity) - Coming soon
 - **LM35** (Temperature) - Coming soon
-- **Rain Sensor** - Coming soon
 
 ### Arduino M0
 - Structure ready - Add your sensors here
@@ -81,10 +106,12 @@ That's it! The sensor starts reading immediately after upload.
 ## Current Status
 
 ### ESP8266
-- ✅ MQ135 (Gas sensor) - Ready
+- ✅ MQ135 (Gas sensor)
+- ✅ ADXL345 (Accelerometer with 3D visualization)
+- ✅ GY-NEO6MV2 (GPS Module)
+- ✅ GY-61 (ADXL335 Analog Accelerometer)
 - 🚧 DHT11 (Temperature/Humidity) - Structure ready
 - 🚧 LM35 (Temperature) - Structure ready
-- 🚧 Rain Sensor - Structure ready
 
 ### Arduino M0
 - 📁 Folder structure created

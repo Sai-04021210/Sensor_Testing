@@ -1,12 +1,12 @@
 #include <Arduino.h>
-#include "ADXL345.h"
+#include "GY61.h"
 
 // ==========================================
-// ADXL345 ACCELEROMETER SENSOR - USING MODULAR LIBRARY
+// GY-61 (ADXL335) ACCELEROMETER - USING MODULAR LIBRARY
 // ==========================================
 
-// Create ADXL345 sensor instance with default config
-ADXL345Sensor sensor;
+// Create GY-61 sensor instance with default config
+GY61Sensor sensor;
 
 void setup() {
   sensor.begin();
