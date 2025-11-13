@@ -1,12 +1,12 @@
 #include <Arduino.h>
-#include "GY61.h"
+#include "HCSR04.h"
 
 // ==========================================
-// GY-61 (ADXL335) ACCELEROMETER - USING MODULAR LIBRARY
+// HC-SR04 ULTRASONIC SENSOR - USING MODULAR LIBRARY
 // ==========================================
 
-// Create GY-61 sensor instance with default config
-GY61Sensor sensor;
+// Create HC-SR04 sensor instance with default config
+HCSR04Sensor sensor;
 
 void setup() {
   sensor.begin();

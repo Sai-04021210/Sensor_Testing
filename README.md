@@ -82,6 +82,12 @@ That's it! The sensor starts reading immediately after upload.
   pio device monitor -e esp8266_gy61 -b 115200
   ```
 
+- **HC-SR04** (Ultrasonic Distance Sensor)
+  ```bash
+  pio run -e esp8266_hcsr04 -t upload
+  pio device monitor -e esp8266_hcsr04 -b 115200
+  ```
+
 - **DHT11** (Temperature/Humidity) - Coming soon
 - **LM35** (Temperature) - Coming soon
 
@@ -110,6 +116,7 @@ That's it! The sensor starts reading immediately after upload.
 - ✅ ADXL345 (Accelerometer with 3D visualization)
 - ✅ GY-NEO6MV2 (GPS Module)
 - ✅ GY-61 (ADXL335 Analog Accelerometer)
+- ✅ HC-SR04 (Ultrasonic Distance Sensor)
 - 🚧 DHT11 (Temperature/Humidity) - Structure ready
 - 🚧 LM35 (Temperature) - Structure ready
 
