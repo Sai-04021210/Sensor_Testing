@@ -88,6 +88,12 @@ That's it! The sensor starts reading immediately after upload.
   pio device monitor -e esp8266_hcsr04 -b 115200
   ```
 
+- **PIR** (Motion Sensor)
+  ```bash
+  pio run -e esp8266_pir -t upload
+  pio device monitor -e esp8266_pir -b 115200
+  ```
+
 - **DHT11** (Temperature/Humidity) - Coming soon
 - **LM35** (Temperature) - Coming soon
 
@@ -117,6 +123,7 @@ That's it! The sensor starts reading immediately after upload.
 - ✅ GY-NEO6MV2 (GPS Module)
 - ✅ GY-61 (ADXL335 Analog Accelerometer)
 - ✅ HC-SR04 (Ultrasonic Distance Sensor)
+- ✅ PIR (Motion Sensor)
 - 🚧 DHT11 (Temperature/Humidity) - Structure ready
 - 🚧 LM35 (Temperature) - Structure ready
 

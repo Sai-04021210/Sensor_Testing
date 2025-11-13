@@ -1,12 +1,12 @@
 #include <Arduino.h>
-#include "HCSR04.h"
+#include "PIR.h"
 
 // ==========================================
-// HC-SR04 ULTRASONIC SENSOR - USING MODULAR LIBRARY
+// PIR MOTION SENSOR - USING MODULAR LIBRARY
 // ==========================================
 
-// Create HC-SR04 sensor instance with default config
-HCSR04Sensor sensor;
+// Create PIR sensor instance with default config
+PIRSensor sensor;
 
 void setup() {
   sensor.begin();
